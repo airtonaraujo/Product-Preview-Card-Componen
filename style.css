@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 0.8rem;
+    border: none;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 0.5rem;
+    outline: none;
+    width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0.8rem;
+    margin: 1rem;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+    background-color: white;
+    max-width: 475px;
+}
+
+.container picture img {
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+    max-width: 640px;
+    width: 100%;
+}
+
+.foto {
+    max-width: 100%;
+}
+
+.button img {
+    border-radius: 0;
+    padding-right: 0.5rem;
+}
+
+.button button:hover {
+    background-color: hsl(158, 45%, 22%);
+}
+
+.textos {
+    max-width: 100%;
+    margin: 1.5rem;
+}
+
+.textos h2 {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+
+.textos h1 {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2.2rem;
+    line-height: 2rem;
+    margin-top: 1rem;
+    letter-spacing: 0.05rem;
+}
+
+.textos p {
+    margin-top: 1rem;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+}
+
+.textos ul {
+    margin-top: 1rem;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.preco {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.preco2 {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+    text-decoration: line-through;
+}
+
+.attribution {
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        max-width: 600px;
+    }
+    
+    .container picture img {
+        border-radius: 0.625rem 0 0 0.625rem;
+        height: 100%;
+    }
+    
+    .container .foto {
+        width: 50%;
+    }
+
+    .textos {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        margin-left: 2rem;
+        width: 50%;
+    }
+
+    .textos h2 {
+        margin-top: 1rem;
+        font-size: .8rem;
+    }
+
+    .textos h1 {
+        line-height: 2.1rem;
+        font-size: 2.6rem;
+    }
+
+    .textos p {
+        font-size: 1rem;
+    }
+
+    .button img {
+        border-radius: 0;
+    }
+}
